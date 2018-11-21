@@ -1,5 +1,6 @@
 package codigo.parkingfree;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -30,7 +31,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.tvRegistar:
 
-
+                startActivity(new Intent(this, RegistrarUsuario.class));
 
                 break;
 
