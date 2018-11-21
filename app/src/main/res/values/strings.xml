@@ -4,4 +4,8 @@
     <string name="clave">Clave</string>
     <string name="buttonAcceder">Acceder</string>
     <string name="sinCuenta">¿Aún no tienes cuenta?</string>
+    <string name="buttonRegistrar">Registrar</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="telefono">Teléfono</string>
 </resources>
