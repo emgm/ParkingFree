@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ParkingFree</string>
+    <string name="documento">Documento</string>
+    <string name="clave">Clave</string>
+    <string name="buttonAcceder">Acceder</string>
+    <string name="sinCuenta">¿Aún no tienes cuenta?</string>
 </resources>
