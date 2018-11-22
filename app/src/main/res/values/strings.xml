@@ -8,4 +8,8 @@
     <string name="nombres">Nombres</string>
     <string name="apellidos">Apellidos</string>
     <string name="telefono">Teléfono</string>
+    <string name="labelcuenta">Mi Cuenta</string>
+    <string name="labelReservas">Mis Reservas</string>
+    <string name="labelComprasRealizadas">Mis Compras</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
 </resources>

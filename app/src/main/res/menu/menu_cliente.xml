@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/opcion_cuenta"
+        android:title="@string/labelcuenta"
+        />
+
+    <item
+        android:id="@+id/opcion_reservas"
+        android:title="@string/labelReservas"
+        />
+
+    <item
+        android:id="@+id/opcion_compras"
+        android:title="@string/labelComprasRealizadas"
+        />
+
+    <item
+        android:id="@+id/opcion_cerrarSesion"
+        android:title="@string/cerrarSesion"
+        />
+
+</menu>
