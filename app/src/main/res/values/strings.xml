@@ -12,4 +12,6 @@
     <string name="labelReservas">Mis Reservas</string>
     <string name="labelComprasRealizadas">Mis Compras</string>
     <string name="cerrarSesion">Cerrar Sesión</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

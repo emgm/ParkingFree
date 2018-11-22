@@ -2,24 +2,30 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-
     <item
-        android:id="@+id/opcion_cuenta"
-        android:title="@string/labelcuenta"
+        android:id="@+id/opcionEditParqueadero"
+        android:title="Mi parqueadero"
+        android:icon="@drawable/ic_edit"
         />
 
     <item
-        android:id="@+id/opcion_reservas"
-        android:title="@string/labelReservas"
+        android:id="@+id/opcionCobrar"
+        android:title="Cobrar"
+        android:icon="@drawable/ic_cobros"
         />
 
     <item
-        android:id="@+id/opcion_compras"
-        android:title="@string/labelComprasRealizadas"
+        android:id="@+id/opcionReserva"
+        android:title="Reservas"
+        android:icon="@drawable/ic_reserva"
         />
 
     <item
-        android:id="@+id/opcion_cerrarSesion"
-        android:title="@string/cerrarSesion"
+        android:id="@+id/opcionVentas"
+        android:title="Ventas"
+        android:icon="@drawable/ic_ventas_realizadas"
         />
+
+
+
 </menu>
