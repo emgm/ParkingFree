@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "211903258480",
+    "firebase_url": "https://parking-free-innova.firebaseio.com",
+    "project_id": "parking-free-innova",
+    "storage_bucket": "parking-free-innova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211903258480:android:784aca5ee87e7dff",
+        "android_client_info": {
+          "package_name": "codigo.parkingfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211903258480-kikg247rmq3v1ff97r1iv9t2o7mkd40g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "codigo.parkingfree",
+            "certificate_hash": "d704f3767925d46326025ae7389b8d719126c0b0"
+          }
+        },
+        {
+          "client_id": "211903258480-ivjomfu6h7bt1mgtmmpmmvbcik4qh7ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqiJwZV-FyEGWbe78PCfCIZELNTcOcHH0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211903258480-ivjomfu6h7bt1mgtmmpmmvbcik4qh7ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
