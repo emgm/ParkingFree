@@ -46,4 +46,9 @@ public class PrincipalCliente extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    @Override
+    public void onBackPressed() {
+
+        moveTaskToBack(true);
+    }
 }

@@ -93,4 +93,10 @@ public class PrincipalAdministrador extends AppCompatActivity implements Navigat
         }
         return false;
     }
+
+    @Override
+    public void onBackPressed() {
+
+        moveTaskToBack(true);
+    }
 }
