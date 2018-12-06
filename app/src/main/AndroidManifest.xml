@@ -22,7 +22,8 @@
             android:label="Registrar Usuario"
             android:parentActivityName=".Login" />
         <activity android:name=".PrincipalCliente" />
-        <activity android:name=".PrincipalAdministrador"></activity>
+        <activity android:name=".PrincipalAdministrador" />
+        <activity android:name=".Cambiar_clave"></activity>
     </application>
 
 </manifest>

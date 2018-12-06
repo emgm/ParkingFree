@@ -14,4 +14,8 @@
     <string name="cerrarSesion">Cerrar Sesión</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="claveActual">Clave actual</string>
+    <string name="claveNueva">Clave nueva</string>
+    <string name="repitaClave">Repita clave</string>
+    <string name="buttonModificar">Modificar</string>
 </resources>

@@ -22,6 +22,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     TextView tvRegistar, etDocumento, etClave;
     Button btnAcceder;
 
+    public static String documento, tipoUsuario;
+
     private FirebaseDatabase mDatabase;
     private DatabaseReference myRef ;
 
@@ -59,7 +61,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.btnAcceder:
 
-                String documento = etDocumento.getText().toString().trim();
+                documento = etDocumento.getText().toString().trim();
                 final String clave = etClave.getText().toString().trim();
 
                 if(!("".equals(documento)) &&  !("".equals(clave))){
@@ -84,7 +86,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
                                         // Se debe obtener el documento y la clave del editText en la interfaz, comparar en la base de datos y de acuerdo al perfil (1- solo cliente, 2- cliente y administrador) remitirlo a la vista
 
-                                        String tipoUsuario = String.valueOf(child.child("TipoUsuario").getValue());
+                                        tipoUsuario = String.valueOf(child.child("TipoUsuario").getValue());
 
                                         switch (tipoUsuario){
 
@@ -95,15 +97,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                                             case "2":
                                                 startActivity(new Intent(getApplicationContext(), PrincipalAdministrador.class));
                                                 break;
-
                                         }
-                                        /*
-                                        if("1".equals(tipoUsuario)){
-                                            startActivity(new Intent(getApplicationContext(), PrincipalCliente.class));
-                                        }else{
-                                            startActivity(new Intent(getApplicationContext(), PrincipalAdministrador.class));
-                                        }
-                                         */
                                     }else{
                                         Toast.makeText(getApplicationContext(), "El documento o la clave no conincide.", Toast.LENGTH_SHORT).show();
                                     }
@@ -130,7 +124,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 }
 
                 break;
-
         }
     }
 }

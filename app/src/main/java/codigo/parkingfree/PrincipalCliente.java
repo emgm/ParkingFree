@@ -27,9 +27,11 @@ public class PrincipalCliente extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.opcion_cerrarSesion:
-
                 startActivity(new Intent(getApplicationContext(), Login.class));
+                break;
 
+            case R.id.opcion_cuenta:
+                startActivity(new Intent(getApplicationContext(), Cambiar_clave.class));
                 break;
 
         }
