@@ -17,7 +17,7 @@ public class RegistrarParqueadero extends AppCompatActivity {
     Button btnRegistrar;
 
     private FirebaseDatabase mDatabase;
-    private DatabaseReference myRef ;
+    private DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
