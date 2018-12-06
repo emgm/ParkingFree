@@ -93,7 +93,7 @@ public class PrincipalAdministrador extends AppCompatActivity implements Navigat
 
             case R.id.opcionEditParqueadero:
 
-                Toast.makeText(this, "opcion 1", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this, RegistrarParqueadero.class));
 
                 break;
 

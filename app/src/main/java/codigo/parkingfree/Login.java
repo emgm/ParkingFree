@@ -129,4 +129,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
     }
+
+    @Override
+    public void onBackPressed() {
+
+        moveTaskToBack(true);
+    }
 }

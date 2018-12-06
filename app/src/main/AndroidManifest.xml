@@ -23,7 +23,10 @@
             android:parentActivityName=".Login" />
         <activity android:name=".PrincipalCliente" />
         <activity android:name=".PrincipalAdministrador" />
-        <activity android:name=".Cambiar_clave"></activity>
+        <activity android:name=".Cambiar_clave" />
+        <activity android:name=".RegistrarParqueadero"
+            android:parentActivityName=".PrincipalAdministrador"
+            android:label="Detalle Parqueadero"></activity>
     </application>
 
 </manifest>

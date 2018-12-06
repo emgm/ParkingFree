@@ -18,4 +18,8 @@
     <string name="claveNueva">Clave nueva</string>
     <string name="repitaClave">Repita clave</string>
     <string name="buttonModificar">Modificar</string>
+    <string name="nombreParqueadero">Nombre Negocio</string>
+    <string name="direccion">Direccion</string>
+    <string name="horarioAtencion">Horario Atención</string>
+    <string name="puestosDisponibles">Puestos Disponibles</string>
 </resources>
