@@ -9,13 +9,16 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PrincipalAdministrador extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     ActionBarDrawerToggle toggle;
+    TextView tvName, tvTelefono;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,12 @@ public class PrincipalAdministrador extends AppCompatActivity implements Navigat
         NavigationView navigationView = findViewById(R.id.navigationView);
         navigationView.setNavigationItemSelectedListener(this);
         View header = navigationView.getHeaderView(0);
+
+        tvName = header.findViewById(R.id.tvName);
+        tvTelefono = header.findViewById(R.id.tvTelefono);
+
+        tvName.setText(Login.nombres);
+        tvTelefono.setText(Login.telefono);
 
         DrawerLayout myDrawerLayout = findViewById(R.id.drawerLayout);
         toggle = new ActionBarDrawerToggle(this, myDrawerLayout, R.string.open, R.string.close);

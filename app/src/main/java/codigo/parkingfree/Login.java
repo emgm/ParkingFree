@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     TextView tvRegistar, etDocumento, etClave;
     Button btnAcceder;
 
-    public static String documento, tipoUsuario;
+    public static String documento, tipoUsuario, nombres, telefono;
 
     private FirebaseDatabase mDatabase;
     private DatabaseReference myRef ;
@@ -83,6 +83,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                                     Log.i("User", " " + child.child("Clave").getValue());
 
                                     if(clave.equals(child.child("Clave").getValue())){
+
+                                        nombres = String.valueOf(child.child("Nombres").getValue());
+                                        telefono = String.valueOf(child.child("Telefono").getValue());
 
                                         // Se debe obtener el documento y la clave del editText en la interfaz, comparar en la base de datos y de acuerdo al perfil (1- solo cliente, 2- cliente y administrador) remitirlo a la vista
 
