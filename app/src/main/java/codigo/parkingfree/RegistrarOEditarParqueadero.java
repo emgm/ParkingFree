@@ -21,6 +21,8 @@ public class RegistrarOEditarParqueadero extends AppCompatActivity implements Vi
     TextView etNombreParqueadero, etDireccion, etHorarioAtencion, etPuestosDisponibles;
     Button btnRegistrar, btnEditar;
 
+    String idParqueadero;
+
     private FirebaseDatabase mDatabase;
     private DatabaseReference myRef;
 
@@ -62,6 +64,8 @@ public class RegistrarOEditarParqueadero extends AppCompatActivity implements Vi
                             btnEditar.setVisibility(View.VISIBLE);
 
                             for (DataSnapshot child : dataSnapshot.getChildren()) {
+
+                                idParqueadero = child.getKey();
 
                                 etNombreParqueadero.setText(String.valueOf(child.child("NombreParqueadero").getValue()));
                                 etDireccion.setText(String.valueOf(child.child("Direccion").getValue()));
@@ -106,11 +110,20 @@ public class RegistrarOEditarParqueadero extends AppCompatActivity implements Vi
 
                 Toast.makeText(getApplicationContext(), "El parqueadero ha sido registrado.", Toast.LENGTH_SHORT).show();
 
-                startActivity(new Intent(getApplicationContext(), PrincipalAdministrador.class));
+                startActivity(new Intent(getApplicationContext(), PrincipalAdministrador.class ));
 
                 break;
 
             case R.id.btnEditar:
+
+                myRef = mDatabase.getReference("Parqueadero").child(idParqueadero);
+
+                myRef.child("NombreParqueadero").setValue(etNombreParqueadero.getText().toString());
+                myRef.child("Direccion").setValue(etDireccion.getText().toString());
+                myRef.child("HorarioAtencion").setValue(etHorarioAtencion.getText().toString());
+                myRef.child("CantidadPuestos").setValue(etPuestosDisponibles.getText().toString());
+
+                Toast.makeText(getApplicationContext(), "Los datos del parqueadero han sido actualizados.", Toast.LENGTH_SHORT).show();
 
                 break;
         }

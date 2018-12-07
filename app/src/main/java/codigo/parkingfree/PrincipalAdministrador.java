@@ -62,7 +62,7 @@ public class PrincipalAdministrador extends AppCompatActivity implements Navigat
                 break;
 
             case R.id.opcion_cuenta:
-                startActivity(new Intent(getApplicationContext(), Cambiar_clave.class));
+                startActivity(new Intent(getApplicationContext(), CambiarClave.class));
                 break;
 
 

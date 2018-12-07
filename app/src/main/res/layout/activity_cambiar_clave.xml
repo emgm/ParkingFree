@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:focusableInTouchMode="true"
-    tools:context=".Cambiar_clave">
+    tools:context=".CambiarClave">
 
     <include
         android:id="@+id/myToolBar"

@@ -31,7 +31,7 @@ public class PrincipalCliente extends AppCompatActivity {
                 break;
 
             case R.id.opcion_cuenta:
-                startActivity(new Intent(getApplicationContext(), Cambiar_clave.class));
+                startActivity(new Intent(getApplicationContext(), CambiarClave.class));
                 break;
 
         }

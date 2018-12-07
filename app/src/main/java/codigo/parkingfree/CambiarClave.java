@@ -17,7 +17,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Cambiar_clave extends AppCompatActivity implements View.OnClickListener {
+public class CambiarClave extends AppCompatActivity implements View.OnClickListener {
 
     TextView etClaveActual, etClaveNueva, etClaveNueva2;
     Button btnModificar;
