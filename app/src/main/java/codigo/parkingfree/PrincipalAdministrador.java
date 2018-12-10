@@ -10,12 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class PrincipalAdministrador extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     ActionBarDrawerToggle toggle;
     TextView tvName, tvTelefono;
+
+    Spinner spinner = (Spinner) findViewById(R.id.spinner);
+    String[] letra = {"A","B","C","D","E"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +48,8 @@ public class PrincipalAdministrador extends AppCompatActivity implements Navigat
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, letra));
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

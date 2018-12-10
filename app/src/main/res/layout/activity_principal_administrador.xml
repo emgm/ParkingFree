@@ -18,12 +18,64 @@
             layout="@layout/toolbar" />
 
         <TextView
+            android:id="@+id/msjParqueaderoInexistente"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/myToolBar"
             android:gravity="center"
-            android:text="Vista Principal Administrador"
-            android:textSize="30sp" />
+            android:text="No hay parqueadero registrado."
+            android:textSize="30sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msjParqueaderoInexistente"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/etDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLogo"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:hint="@string/documento" />
+
+
+            <EditText
+                android:id="@+id/etHoraIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDocumento"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:inputType="number"
+                android:hint="@string/horaIngreso" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etHoraIngreso"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"/>
+
+
+        </RelativeLayout>
 
     </RelativeLayout>
 

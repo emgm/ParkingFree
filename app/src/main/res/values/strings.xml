@@ -23,4 +23,5 @@
     <string name="horarioAtencion">Horario Atención</string>
     <string name="puestosDisponibles">Puestos Disponibles</string>
     <string name="buttonEditar">Editar</string>
+    <string name="horaIngreso">Hora Ingreso</string>
 </resources>
